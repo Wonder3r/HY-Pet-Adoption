@@ -1,0 +1,50 @@
+body{font-family: Arial, Helvetica, sans-serif;}
+
+.button {
+    background-color:rgb(220, 151, 41); padding: 16px; font-size: 16px; border: none;}
+
+.navbar {position: relative; display: inline-block;}
+
+.dropdown {
+    display: none; position: absolute; min-width: 100px; box-shadow: 0px 8px 16px 0px;}
+
+.dropdown a {
+    padding: 12px 16px; display: block; color: black; text-decoration:none;background-color: whitesmoke;}
+
+.navbar:hover .dropdown {display: block;}
+
+.container{
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 18.5% auto 30%; gap: 10px; 
+}
+
+.Header{
+    grid-column-start: 1; grid-column-end: 7; background-color: darkgoldenrod;
+}
+
+.Header{
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+}
+
+.img{padding: 8px; grid-column-start: 1; grid-column: 2;}
+
+.menu{padding: 8px; grid-column-start: 3; grid-column-end: 4; grid-row-start: 2;}
+
+.announcements{
+    grid-column-start: 1; grid-column-end: 3; background-color: lightgreen;
+}
+
+.featured{
+    grid-column-start: 3; grid-column-end: 7; background-color: lightblue;
+}
+
+.Footer{
+    grid-column-start: 1; grid-column-end: 7;
+}
+
+.Footer{
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;
+}
+
+.Footer div{
+    padding: 8px; background-color: lightgray;
+}
