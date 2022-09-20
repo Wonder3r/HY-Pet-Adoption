@@ -19,11 +19,8 @@ body{font-family: Arial, Helvetica, sans-serif;}
     display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr;
 }
 
-.Header{grid-column-start: 1; grid-column-end: 6;}
+.Header{grid-column-start: 1; grid-column-end: 6; background-color: burlywood;}
 
-.Header{
-    display: grid; grid-template-columns: 1fr 1fr 1fr; background-color: burlywood; align-content: center; padding: 20px; justify-content: center;
-}
 
 .Get{grid-column-start: 1; grid-column-end: 3;}
 
