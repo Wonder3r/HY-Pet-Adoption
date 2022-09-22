@@ -142,9 +142,71 @@ h1{text-align: center;
    word-wrap: break-word;
   }
 
-  #donation-button button{
-    background-color: skyblue;
-    padding: 50px;
-    text-size: 50px;
-  }
+ .donate{
+  display: grid;
+  grid-template-rows: 15% 1fr 1fr 1fr 1fr;
+ } 
+
+ .top-box{
+  grid-row-start: 1;
+  grid-row-end: 2;
+ }
+
+#donate-box{
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.donate a{
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+ #donation-button button{
+  background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
+  box-shadow: 0 4px 15px 0 rgba(158, 210, 210, 0.75);
+  width: 350px;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  padding: 15px;
+  height: 50px;
+  text-align: center;
+  border-color: lightgrey;
+  border-radius: 50px;
+}
+
+.donate a{
+  text-align: center;
+}
+
+form{
+  text-align: center;
+  box-sizing: border-box;
+}
+
+form label{
+  padding: 12px;
+  display: inline-block;
+}
+
+form input{
+  width: 50%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+}
+#submit-button{
+  background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
+  box-shadow: 0 4px 15px 0 rgba(158, 210, 210, 0.75);
+  width: 150px;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  padding: 15px;
+  height: 50px;
+  text-align: center;
+  border-color: lightgrey;
+  border-radius: 50px;
+  gap: 10px;
+}
 

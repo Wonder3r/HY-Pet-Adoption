@@ -73,12 +73,12 @@ body {
     text-align: right;
     align-self: center;
 
-    .Get {
+  .Get {
   grid-column-start: 1;
   grid-column-end: 3;
-}
+  }
 
-    #vol {
+  #vol {
   grid-column-start: 4;
   grid-column-end: 5;
-}
+  }
