@@ -1,6 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: grey;
+  }
+
+  img {
+    border-radius: 45px;
   }
   
   .button,
@@ -24,9 +27,8 @@ body {
     box-shadow: 0px 8px 16px 0px;
   }
   
-  .dropdown a {
+  .dropdown {
     padding: 12px 16px;
-    display: block;
     color: black;
     text-decoration: none;
     background-color: burlywood;
@@ -45,13 +47,13 @@ body {
   .container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 18%.5 auto;
+    grid-template-rows: 15% auto;
     gap: 8px;
   }
   
   .Header {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 5;
   }
   
   .Header {

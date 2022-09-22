@@ -1,131 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
-    <title>H.Y Adoption Main Page</title>
-  </head>
+    <title>H.Y. Adoption Center</title>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <div class="Header">
-        <img class="img"
-        src="img/HY-Logo.jpg"
-        alt="HY-Logo"
-        width="200"
-        height="200"
-        <nav>
-            <div class="menu">
-              <div class="navbar">
-                <button class="button">Adoption</button>
-                <div class="dropdown">
-                  <a href="cat.html">Cat</a>
-                  <a href="dog.html">Dog</a>
+        <div class="Header">
+            <img id="logo" src="img/HY-Logo.jpg" alt="HY-Logo" width="180" height="180">
+            <nav>
+                <div class="menu">
+                    <div class="navbar">
+                        <button class="button">Adoption</button>
+                        <div class="dropdown">
+                          <a href="cat.html">Cat</a>
+                          <a href="dog.html">Dog</a>
+                        </div>
+                    </div>
+                    <a href="donation.html">Donation</a>
+                    <a href="petcare.html">Pet Care</a>
+                    <a href="abtHY.html">About</a>
+                    <a href="involved.html">Get Involved</a>
                 </div>
-              </div>
-              <a href="donation.html">Donation</a>
-              <a href="petcare.html">Pet Care</a>
-              <a href="abtHY.html">About</a>
-              <a href="involved.html">Get Involved</a>
-            </div>
-        </nav>
-      </div>
-      <div class="announcements">
-        <h1>Announcements</h1>
-        <h2>Discounts on Pets</h2>
-        <p>
-          Come join us on December, 12th 20XX. We will be having a big adoption
-          event. For those that adopt or donate, they will be entered into a
-          raffle for a change to win $800. In addition, we will have
-          refreshments, HY swag, and discounts on our pet fees. Wont be able to
-          join but still want to help? Please take a moment to donate on our
-          page bellow.
-        </p>
-        <h2>Adoption Events</h2>
-        <p>9/14 -Main location</p>
-        <p>10/10 -Main location</p>
-        <p>11/14 -Main location</p>
-        <h2>Vaccines</h2>
-        <h3>Dates</h3>
-        <p>9/14</p>
-        <p>11/20</p>
-        <p>12/12</p>
-        <p>12/20</p>
-      </div>
-      <div class="featured">
-        <h1 id="Ft">Featured</h1>
-        <div class="pic-container">
-          <div id="catrow">
-            <div id="cat"> <img class="first"
-              src="img/cat.jpg"
-              alt="cat"
-              width="80"
-              height="80"
-            </div>
-            <div id="cats"> <img class="first"
-              src="img/cat.jpg"
-              alt="cat"
-              width="80"
-              height="80"
-            </div>
-            <div id="cats0"> <img class="first"
-              src="img/cat.jpg"
-              alt="cat"
-              width="80"
-              height="80"
-            </div>
-          </div>
-          <div id="dogrow">
-            <div id="dog">
-              <img class="first"
-            src="img/dog.jpg"
-            alt="cat"
-            width="80"
-            height="80"
-            </div>
-            <div id="dogs">
-              <img class="first"
-            src="img/dog.jpg"
-            alt="cat"
-            width="80"
-            height="80"
-            </div>
-            <div id="dogs0">
-              <img class="first"
-            src="img/dog.jpg"
-            alt="cat"
-            width="80"
-            height="80"
-            </div>
-          </div>
+            </nav>
         </div>
-      </div>
-      <div class="Footer">
-        <div class="info">
-          <h1>Location</h1>
-          <h1>Hours</h1>
-          <h1>Contact</h1>
+        <div class="announcements">
+            <h1 id="Ann">Announcements</h1>
+            <div id="discounts">
+                <h2>Discounts on Pets</h2>
+                <p>
+                    Come join us on December, 12th 20XX. We will be having a big adoption
+                    event. For those that adopt or donate, they will be entered into a
+                    raffle for a change to win $800. In addition, we will have
+                    refreshments, HY swag, and discounts on our pet fees. Wont be able to
+                    join but still want to help? Please take a moment to donate on our
+                    page below.
+                </p>
+            </div>
+            <div id="events">
+                <h2>Adoption Events</h2>
+                    <p>9/14 -Main location</p>
+                    <p>10/10 -Main location</p>
+                    <p>11/14 -Main location</p>
+            </div>
+            <div id="vacs">
+                <h2>Vaccines</h2>
+                <h3>Dates - at Main location</h3>
+                <p>9/14</p>
+                <p>11/20</p>
+                <p>12/12</p>
+                <p>12/20</p>
+            </div> 
         </div>
-        <div class="donate">
-          <h1>Donors</h1>
-          <p>X-Company</p>
-          <p>Y-Company</p>
+        <div class="featured">
+            <h1>Featured</h1>
+            <div class="pic-container">
+                <div id="catrow">
+                    <img class="circle" src="img/cat.jpg" alt="cat" width="180" height="180">
+                    <img class="circle" src="img/cat.jpg" alt="cat" width="180" height="180">
+                    <img class="circle" src="img/cat.jpg" alt="cato" width="180" height="180">                  
+                </div>
+                <div id="dogrow">
+                    <img class="circle" src="img/dog.jpg" alt="dog" width="180" height="180">
+                    <img class="circle" src="img/dog.jpg" alt="dog" width="180" height="180">
+                    <img class="circle" src="img/dog.jpg" alt="dog" width="180" height="180">
+                </div>
+            </div>
         </div>
-        <div class="news-email">
-          <h1>Sign Up</h1>
-          <form action="mailto:yfigueroarodrigu@phx.yearup.org" method="post" enctype="text/plain">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <input type="submit" value="Submit">
-          </form>
+        <div class="footer">
+            <div class="info">
+                <h1>Location</h1>
+                    <p>989 San Pedro Dr.</p>
+                    <p>Round Lake, California (CA), 31501</p>
+                <h1>Hours</h1>
+                    <p>Monday - Friday  10am - 6pm</p>
+                    <p>Saturday - Sunday 11am - 9pm</p>
+                <h1>Contact</h1>
+                <p>510-000-000</p>
+                <p>H.Y@randomemail.com</p>
+            </div>
+            <div class="donate">
+                <h1>Donors</h1>
+                <p>X-Company</p>
+                <p>Y-Company</p>
+                <h1>Donate</h1>
+                    <a id="donation-button" href="donation.html"> <button>Click Here to Donate</button></a>
+            </div>
+            <div class="news-email">
+                <h1>Sign Up</h1>
+                <form action="mailto:yfigueroarodrigu@phx.yearup.org" method="post" enctype="text/plain">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
