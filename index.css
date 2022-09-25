@@ -43,7 +43,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 15% auto;
+  grid-template-rows: 12% auto;
   gap: 8px;
 }
 

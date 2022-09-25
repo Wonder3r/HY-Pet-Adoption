@@ -4,51 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="otherpage.css" />
-    <title>H.Y Adoption Main Page</title>
+    <link rel="stylesheet" href="donation.css" />
+    <title>Document</title>
   </head>
 
   <body>
     <div class="container">
-      <div class="Header">
-        <img class="img"
-        src="img/HY-Logo.jpg"
-        alt="HY-Logo"
-        width="200"
-        height="200"
+      <div class="header">
+        <img
+          id="logo"
+          src="img/HY-Logo.jpg"
+          alt="HY-Logo"
+          width="180"
+          height="180"
+        />
         <nav>
-            <div class="menu">
-              <div class="navbar">
-                <button class="button">Adoption</button>
-                <div class="dropdown">
-                  <a href="cat.html">Cat</a>
-                  <a href="dog.html">Dog</a>
-                </div>
+          <div class="menu">
+            <div class="navbar">
+              <button class="button">Adoption</button>
+              <div class="dropdown">
+                <a href="cat.html">Cat</a>
+                <a href="dog.html">Dog</a>
               </div>
+            </div>
               <a href="donation.html">Donation</a>
               <a href="petcare.html">Pet Care</a>
               <a href="abtHY.html">About</a>
               <a href="involved.html">Get Involved</a>
               <a href="index.html">Home</a>
-            </div>
+          </div>
         </nav>
       </div>
-      <div class="announcements">
-        
-      </div>
-      <div class="featured">
-    
-      </div>
-      <div class="Footer">
-        <div class="info">
-         
-        </div>
-        <div class="donate">
-          
-        </div>
-        <div class="news-email">
-          
-        </div>
+      <div class="donation-container">
+        <div class="donation-section1">
+          <h1>Donate to HY Adoption</h1>
+          <h2>The care we are able to provide is made possible through support of community members like you. Donations do not always have to be money it can also be pet supplies.</h2>
+          <img id="dog-donation" src="img/donation-pic.jpeg" alt="dog-pic" width="600" height="400">
+          </div>
+          <div class="ways-to-donate">
+            <div class="in-person">
+              <h3>Donate in-person</h3>
+              <p>Please stop by the main shelter location to drop of donations - 989 San Pedro Dr.</p>
+            </div>
+            <div class="online">
+              <h3>Donate online</h3>
+              <form action="#">
+                <label for="fname">First Name:</label> <br>
+                <input type="text" id="fname" name="fname"> <br>
+                <label for="lname">Last Name:</label> <br>
+                <input type="text" id="lname" name="lname"> <br> <br>
+                <input type="radio" id="5" name="option" value="HTML"> <br>
+                <label for="5">$5</label> <br>
+                <input type="radio" id="10" name="option" value="HTML"> <br>
+                <label for="10">$10</label> <br>
+                <input type="radio" id="20" name="option" value="HTML"> <br>
+                <label for="20">$20</label> <br>
+                <label for="numbers">Custom Amount</label>
+                <input type="number" min="0" id="numbers" name="numbers" required="required"> <br><br>
+                <input type="submit" value="submit">
+              </form>
+            </div>
+            <div class="mail">
+              <h3>Donate through Mail</h3>
+              <p>P.O. Box 10XX</p>
+              <p>01123, Random City, AZ</p>
+            </div>
+          </div>
       </div>
     </div>
   </body>
