@@ -43,8 +43,8 @@ body {
   .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto 90%;
-    gap: 15px;
+    grid-template-rows: 16% 84%;
+    gap: 8px;
   }
   
   
@@ -55,7 +55,7 @@ body {
   
   .header {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     background-color: burlywood;
     align-content: center;
     padding: 20px;
@@ -70,7 +70,7 @@ body {
   
   nav {
     grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-end: 7;
     text-align: right;
     justify-content: center;
     align-self: center;
@@ -80,10 +80,106 @@ body {
   .donation-container{
     grid-column-start: 1;
     grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   .donation-container{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .donation-section1{
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .donation-section1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(26, 151, 200, 0.86);
+  }
+
+  .donation-section1 h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .donation-section1 h2{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 25px;
+    line-height: 2em;
+  }
+
+  #dog-donation{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 20px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    border-radius: 25%;
+  }
+
+  .ways-to-donate{
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .ways-to-donate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .ways-to-donate div{
+    padding: 40px;
+    background-color: burlywood;
+  }
+
+  h3{
+    text-decoration-line: underline;
+  }
+
+  .info{
+    line-height: 30px;
+  }
+
+  .online{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+  }
+
+  form{
+    box-sizing: border-box;
+    line-height: 10px;
+  }
+
+  .radio label, input{
+    width: 20%;
+    margin:  5px;
+    border: 1px solid lightgrey;
+  }
+
+
+  #submit-button{
+    background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
+    box-shadow: 0 4px 15px 0 rgba(158, 210, 210, 0.75);
+    width: 150px;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+    padding: 15px;
+    height: 50px;
+    text-align: center;
+    border-color: lightgrey;
+    border-radius: 50px;
+    gap: 10px;
   }

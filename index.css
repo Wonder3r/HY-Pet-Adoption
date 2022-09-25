@@ -108,14 +108,15 @@ nav{
   padding: 20px;
 }
 
-.footer{grid-column-start: 1;
+.footer{
+  grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 3;
 }
 
 .footer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 
