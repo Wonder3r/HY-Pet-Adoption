@@ -43,7 +43,7 @@ body {
   .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 16% 84%;
+    grid-template-rows: 14.5% 85.5%;
     gap: 8px;
   }
   
@@ -159,15 +159,19 @@ body {
 
   form{
     box-sizing: border-box;
-    line-height: 10px;
+    line-height: 6em;
+    padding: 50px;
   }
 
-  .radio label, input{
-    width: 20%;
-    margin:  5px;
-    border: 1px solid lightgrey;
+  .radio{
+    margin: 9px;
   }
 
+.custom{
+  padding: 6px;
+  border-color: lightgrey;
+  width: 4.5em;
+}
 
   #submit-button{
     background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));

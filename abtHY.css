@@ -1,0 +1,127 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .button,
+  a {
+    background-color: burlywood;
+    padding-right: 15px;
+    font-size: 35px;
+    border: none;
+    position: relative;
+  }
+  
+  .navbar {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px;
+  }
+  
+  .dropdown {
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    background-color: burlywood;
+  }
+  
+  .navbar:hover .dropdown {
+    display: block;
+  }
+  
+  :any-link {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 18% auto;
+    gap: 8px;
+  }
+  
+  
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: burlywood;
+    align-content: center;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  #logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 40px;
+  }
+  
+  nav {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    text-align: right;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+  }
+
+  .main-content{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  }
+
+  .main-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45% 55%;
+    gap: 8px;
+  }
+
+  .abt-top{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(26, 151, 200, 0.86);
+  }
+
+  .abt-top{
+    text-align: center;
+  }
+
+  .frito{
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+    background-color: white;
+  }
+
+  .abt-bottom{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: burlywood;
+    padding: 35px;
+  }
+
+  .abt-bottom h1, h2{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .abt-bottom p{
+    padding: 8px;
+    line-height: 25px;
+  }
