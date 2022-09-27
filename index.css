@@ -1,167 +1,174 @@
-body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-.button,
-a {
-  background-color: burlywood;
-  padding-right: 15px;
-  font-size: 35px;
-  border: none;
-  position: relative;
+header {
+  margin: 25px 180px;
 }
 
-.navbar {
-  position: relative;
-  display: inline-block;
+.nav-container ul{
+  list-style: none;
 }
 
-.dropdown {
-  display: none;
-  position: absolute;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px;
-}
-
-.dropdown {
-  padding: 12px 16px;
-  color: black;
+:any-link{
   text-decoration: none;
-  background-color: burlywood;
+  color: black;
 }
 
-.navbar:hover .dropdown {
+.nav-container ul li{
+  background-color: rgb(221, 146, 6);
+  width: 180px;
+  height: 60px;
+  border: 5px solid white;
+  line-height: 55px; 
+  text-align: center;
+  justify-content: center;
+  float: right;
+  color: black;
+  font-size: 28px;
+  border-radius: 10px;
+  position: relative;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.nav-container ul li:hover{
+  background-color: lightgray;
+}
+
+.nav-container ul ul{
+  display: none;
+}
+
+.nav-container ul li:hover > ul{
   display: block;
 }
 
-:any-link {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
+.logo{
+  align-content: right;
 }
 
-.container {
+.container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 12.5% auto;
-  gap: 8px;
+  grid-template-rows: auto auto auto;
+  gap: 5px;
 }
 
-.Header{
+header{
   grid-column-start: 1;
   grid-column-end: 7;
-}
-
-.Header{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: burlywood;
-  align-content: center;
-  padding: 20px;
-  justify-content: center;
+  grid-row-start: 1;
 }
 
 #logo{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-radius: 36px;
   grid-column-start: 1;
   grid-column-end: 2;
-  border-radius: 40px;
-}
-
-nav{
-  grid-column-start: 3;
-  grid-column-end: 6;
-  text-align: right;
-  justify-content: center;
-  align-self: center;
-  justify-items: center;
+  padding: 25px;
 }
 
 .announcements{
+  grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 4;
-  padding: 20px;
+  padding: 25px;
 }
 
 .announcements{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10% 25% 24% 34%;
-  background-color: rgba(26, 151, 200, 0.86);
-  row-gap: 2vh;
-  overflow: hidden;
+  display: flexbox;
+  background-color: lightgray;
 }
 
-#vacs{
-  grid-row-start: 4;
-  grid-row-end: 5;
+.announcements >div{
+  margin: 20px 5px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 40px;
 }
 
-.announcements div{
-  background-color: rgba(26, 151, 200, 0.86);
-  padding: 15px;
+.announcements> h1, h2{
+  line-height: 70px;
 }
 
 .featured{
   grid-column-start: 4;
   grid-column-end: 7;
-  background-color: rgba(26, 151, 200, 0.86);
+  grid-row-start: 2;
+  padding: 25px;
+}
+
+.featured{
+  display: flexbox;
+  background-color: lightgray;
+}
+
+.featured >div{
+  margin: 50px 5px;
   padding: 20px;
+  line-height: 80px;
+}
+
+.circle{
+  max-width: 100%;
+  border-radius: 90%;
+  padding: 8px;
 }
 
 .footer{
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .footer{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: 36% auto 40%;
+  gap: 5px;
 }
 
 .footer div{
   padding: 15px;
-  background-color: burlywood;
+  background-color: lightgray;
 }
 
-.circle{
-  max-width: 80%;
-  height: auto;
-  border-radius: 90%;
-  padding: 22px;
-}
-
-.pic-container{
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-h1{text-align: center;
-   font-size: 40px;
-   word-wrap: break-word;
-  }
-
- .donate{
-  display: grid;
-  grid-template-rows: 15% 1fr 1fr 1fr 1fr;
- } 
-
- .top-box{
-  grid-row-start: 1;
-  grid-row-end: 2;
+.info{
+  display: flexbox;
  }
 
-#donate-box{
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
+ .info div{
+  margin: 8px 3px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 40px;
+  width: 100%;
+ }
 
-.donate a{
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
+ .donate{
+  display: flexbox;
+ }
+ 
+ .donate >div{
+  margin: 20px 5px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 40px;
+ }
+
+ .news-email{
+  display: flexbox;
+ }
+
+ .news-email >div{
+  margin: 20px 5px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 40px;
+ }
 
  #donation-button button{
   background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
@@ -177,25 +184,6 @@ h1{text-align: center;
   border-radius: 50px;
 }
 
-.donate a{
-  text-align: center;
-}
-
-form{
-  text-align: center;
-  box-sizing: border-box;
-}
-
-form label{
-  padding: 12px;
-  display: inline-block;
-}
-
-form input{
-  width: 50%;
-  padding: 8px;
-  border: 1px solid lightgrey;
-}
 #submit-button{
   background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
   box-shadow: 0 4px 15px 0 rgba(158, 210, 210, 0.75);
@@ -210,4 +198,25 @@ form input{
   border-radius: 50px;
   gap: 10px;
 }
+
+form{
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px 5px;
+  padding: 10px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+form input{
+  width: 45%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+}
+
+form label{
+  padding: 10px;
+  display: inline-block;
+}
+
 
