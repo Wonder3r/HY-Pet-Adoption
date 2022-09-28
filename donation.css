@@ -1,189 +1,203 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .button,
-  a {
-    background-color: burlywood;
-    padding-right: 15px;
-    font-size: 35px;
-    border: none;
-    position: relative;
-  }
-  
-  .navbar {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown {
-    display: none;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px;
-  }
-  
-  .dropdown {
-    padding: 12px 16px;
-    color: black;
-    text-decoration: none;
-    background-color: burlywood;
-  }
-  
-  .navbar:hover .dropdown {
-    display: block;
-  }
-  
-  :any-link {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 14.5% 85.5%;
-    gap: 8px;
-  }
-  
-  
-  .header {
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
-  
-  .header {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background-color: burlywood;
-    align-content: center;
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  #logo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-radius: 40px;
-  }
-  
-  nav {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    text-align: right;
-    justify-content: center;
-    align-self: center;
-    justify-items: center;
-  }
-
-  .donation-container{
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .donation-container{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .donation-section1{
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
-
-  .donation-section1{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: rgba(26, 151, 200, 0.86);
-  }
-
-  .donation-section1 h1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin: 15px;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .donation-section1 h2{
-    text-align: center;
-    display: block;
-    margin: auto;
-    padding: 25px;
-    line-height: 2em;
-  }
-
-  #dog-donation{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin: 20px;
-    padding: 20px;
-    display: block;
-    margin: auto;
-    border-radius: 25%;
-  }
-
-  .ways-to-donate{
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
-
-  .ways-to-donate{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .ways-to-donate div{
-    padding: 40px;
-    background-color: burlywood;
-  }
-
-  h3{
-    text-decoration-line: underline;
-  }
-
-  .info{
-    line-height: 30px;
-  }
-
-  .online{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: center;
-  }
-
-  form{
-    box-sizing: border-box;
-    line-height: 6em;
-    padding: 50px;
-  }
-
-  .radio{
-    margin: 9px;
-  }
-
-.custom{
-  padding: 6px;
-  border-color: lightgrey;
-  width: 4.5em;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-  #submit-button{
-    background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
-    box-shadow: 0 4px 15px 0 rgba(158, 210, 210, 0.75);
-    width: 150px;
-    font-size: 20px;
-    font-weight: 550;
-    cursor: pointer;
-    padding: 15px;
-    height: 50px;
-    text-align: center;
-    border-color: lightgrey;
-    border-radius: 50px;
-    gap: 10px;
-  }
+header {
+  margin: 25px 180px;
+}
+
+.nav-container ul{
+  list-style: none;
+}
+
+:any-link{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container ul li{
+  background-color: rgb(221, 146, 6);
+  width: 180px;
+  height: 60px;
+  border: 5px solid white;
+  line-height: 55px; 
+  text-align: center;
+  justify-content: center;
+  float: right;
+  color: black;
+  font-size: 28px;
+  border-radius: 10px;
+  position: relative;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.nav-container ul li:hover{
+  background-color: lightgray;
+}
+
+.nav-container ul ul{
+  display: none;
+}
+
+.nav-container ul li:hover > ul{
+  display: block;
+}
+
+.logo{
+  align-content: right;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  gap: 5px;
+}
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+}
+
+#logo{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-radius: 36px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 25px;
+}
+
+.donation-container{
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.donation-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
+.donation-section1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.donation-section1{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 18% auto;
+  background-color: lightgray;
+}
+
+.info-donation1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.info-donation2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 19%;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+#pic-container{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#pic-container{
+  padding: 20px;
+  margin: 20px;
+}
+
+.ways-to-donate{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.ways-to-donate{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+}
+
+.in-person{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+.mail{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+.online{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+#submit-button{
+  background-image: linear-gradient(to right, rgba(26, 151, 200, 0.86), rgba(100, 188, 223, 0.86), rgba(198, 178, 145, 0.86), rgb(222, 184, 135));
+  box-shadow: 0 4px 15px 0 rgba(158, 210, 210, 0.75);
+  width: 150px;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  padding: 15px;
+  height: 50px;
+  text-align: center;
+  border-color: lightgrey;
+  border-radius: 50px;
+  gap: 10px;
+}
+
+form{
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px 5px;
+  padding: 10px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+form input{
+  width: 45%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+}
+
+form label{
+  padding: 5px;
+  display: inline-block;
+}

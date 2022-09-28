@@ -10,33 +10,26 @@
 
   <body>
     <div class="container">
-      <div class="header">
-        <img
-          id="logo"
-          src="img/HY-Logo.jpg"
-          alt="HY-Logo"
-          width="180"
-          height="180"
-        />
-        <nav>
-          <div class="menu">
-            <div class="navbar">
-              <button class="button">Adoption</button>
-              <div class="dropdown">
-                <a href="cat.html">Cat</a>
-                <a href="dog.html">Dog</a>
-              </div>
-            </div>
-            <a href="donation.html">Donation</a>
-            <a href="abtHY.html">About</a>
-            <a href="involved.html">Get Involved</a>
-            <a href="index.html">Home</a>
-          </div>
+      <header>
+        <nav class="nav-container">
+          <ul class="nav-links">
+            <li>Adoption
+              <ul>
+              <li><a href="cat.html">Cat</a></li>
+              <li><a href="dog.html">Dog</a></li>
+              </ul>
+            </li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="abtHY.html">About</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
         </nav>
-      </div>
+      </header>
+      <img id="logo" src="img/HY-Logo.jpg" alt="HY logo" width="150" height="150">
       <div class="main-content">
         <div class="abt-top">
-          <h1>About HY Adoption</h1>
+          <h1 class="top-p">About HY Adoption</h1>
           <img
             class="frito"
             src="img/baby-frito.jpg"
@@ -45,7 +38,7 @@
             height="260"
           />
           <img
-            class="frito"
+            class="frito2"
             src="img/teen-frito.jpg"
             alt="dog"
             width="220"
