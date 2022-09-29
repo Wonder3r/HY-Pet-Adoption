@@ -40,7 +40,7 @@ header {
 }
 
 .nav-container ul li:hover{
-  background-color: lightgray;
+  background-color: rgba(10, 141, 193, 0.815);
 }
 
 .nav-container ul ul{
