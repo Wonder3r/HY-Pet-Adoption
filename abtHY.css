@@ -19,7 +19,7 @@ header {
 
 :any-link{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .nav-container ul li{
@@ -31,7 +31,7 @@ header {
   text-align: center;
   justify-content: center;
   float: right;
-  color: black;
+  color: white;
   font-size: 32px;
   border-radius: 5px;
   position: relative;
@@ -97,6 +97,8 @@ header{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
   font-size: 28px;
+  background-color: rgba(10, 141, 193, 0.815);
+  color: white;
 }
 
 .top-p{
@@ -136,13 +138,14 @@ header{
 }
 
 .abt-bottom{
-  background-color: lightgray;
+  background-color: rgb(221, 146, 6);
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 5;
   margin-bottom: 15px;
   padding-bottom: 20px;
   font-size: 28px;
+  color: white;
 }
 
 .abt-bottom > p{

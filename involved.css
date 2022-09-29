@@ -19,7 +19,7 @@ header {
 
 :any-link{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .nav-container ul li{
@@ -31,7 +31,7 @@ header {
   text-align: center;
   justify-content: center;
   float: right;
-  color: black;
+  color: white;
   font-size: 32px;
   border-radius: 5px;
   position: relative;
