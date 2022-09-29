@@ -19,7 +19,7 @@ header {
 
 :any-link{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .nav-container ul li{
@@ -27,11 +27,11 @@ header {
   width: 190px;
   height: 45px;
   border: 5px solid white;
-  line-height: 36px; 
+  line-height: 40px; 
   text-align: center;
   justify-content: center;
   float: right;
-  color: black;
+  color: white;
   font-size: 32px;
   border-radius: 5px;
   position: relative;
@@ -40,7 +40,7 @@ header {
 }
 
 .nav-container ul li:hover{
-  background-color: lightgray;
+  background-color:  rgba(10, 141, 193, 0.815);
 }
 
 .nav-container ul ul{
@@ -80,11 +80,12 @@ header{
   grid-column-start: 1;
   grid-column-end: 4;
   padding: 25px;
+  color: white;
 }
 
 .announcements{
   display: flexbox;
-  background-color: lightgray;
+  background-color:  rgb(221, 146, 6);
   font-size: 28px;
 }
 
@@ -112,8 +113,9 @@ header{
 
 .featured{
   display: flexbox;
-  background-color: lightgray;
+  background-color: rgba(10, 141, 193, 0.815);
   font-size: 28px;
+  color: white;
 }
 
 .featured >div{
@@ -143,12 +145,12 @@ header{
 
 .footer div{
   padding: 15px;
-  background-color: lightgray;
 }
 
 .info{
   display: flexbox;
-  
+  background-color: rgba(10, 141, 193, 0.815);
+  color: white;
  }
 
  .info> div{
@@ -172,9 +174,16 @@ header{
   text-align: center;
  }
 
+ .donate{
+  background-color: rgb(221, 146, 6);
+  color: white;
+ }
+
  .news-email{
   display: flexbox;
   font-size: 23px;
+  background-color: rgba(10, 141, 193, 0.815);
+  color: white;
  }
 
  .news-email h1{
@@ -194,7 +203,7 @@ header{
   padding: 15px;
   height: 60px;
   text-align: center;
-  border-color: lightgrey;
+  border-color: darkgrey;
   border-radius: 50px;
 }
 
@@ -208,7 +217,7 @@ header{
   padding: 15px;
   height: 60px;
   text-align: center;
-  border-color: lightgrey;
+  border-color: darkgrey;
   border-radius: 50px;
 }
 
@@ -225,7 +234,7 @@ form input{
   width: 60%;
   padding: 12px;
   font-size: 24px;
-  border: 1px solid lightgrey;
+  border: 1px solid darkgrey;
 }
 
 form label{
