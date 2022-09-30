@@ -10,7 +10,7 @@ body{
 }
 
 header {
-  margin: 25px 180px;
+  margin: 25px 25px;
 }
 
 .nav-container ul{
@@ -84,7 +84,6 @@ header{
 }
 
 .announcements{
-  display: flexbox;
   background-color:  rgb(221, 146, 6);
   font-size: 28px;
 }
@@ -112,7 +111,6 @@ header{
 }
 
 .featured{
-  display: flexbox;
   background-color: rgba(10, 141, 193, 0.815);
   font-size: 28px;
   color: white;
@@ -148,7 +146,6 @@ header{
 }
 
 .info{
-  display: flexbox;
   background-color: rgba(10, 141, 193, 0.815);
   color: white;
  }
@@ -180,7 +177,6 @@ header{
  }
 
  .news-email{
-  display: flexbox;
   font-size: 23px;
   background-color: rgba(10, 141, 193, 0.815);
   color: white;
