@@ -10,7 +10,7 @@ body{
 }
 
 header {
-  margin: 25px 25px;
+  margin: 15px 30px;
 }
 
 .nav-container ul{
@@ -24,18 +24,18 @@ header {
 
 .nav-container ul li{
   background-color: rgb(221, 146, 6);
-  width: 190px;
-  height: 45px;
-  border: 5px solid white;
-  line-height: 40px; 
+  width: 160px;
+  height: 25px;
+  border: 3px solid white;
+  line-height: 25px; 
   text-align: center;
   justify-content: center;
   float: right;
   color: white;
-  font-size: 32px;
+  font-size: 25px;
   border-radius: 5px;
   position: relative;
-  padding: 15px;
+  padding: 10px;
   align-self: center;
 }
 
@@ -72,14 +72,14 @@ header{
   border-radius: 36px;
   grid-column-start: 1;
   grid-column-end: 2;
-  padding: 25px;
+  padding: 10px;
 }
 
 .announcements{
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 4;
-  padding: 25px;
+  padding: 15px;
   color: white;
 }
 
@@ -88,14 +88,20 @@ header{
   font-size: 28px;
 }
 
+.announcements #Ann{
+  text-align: center;
+}
+
+#discounts p{
+  padding: 0px 80px 0px 0px;
+}
+
 .announcements >div{
-  margin: 20px 5px;
-  padding: 20px;
-  line-height: 40px;
+  padding: 15px;
 }
 
 .announcements > div> p{
-  font-size: 24px;
+  font-size: 22px;
   line-height: 45px;
 }
 
@@ -107,7 +113,7 @@ header{
   grid-column-start: 4;
   grid-column-end: 7;
   grid-row-start: 2;
-  padding: 25px;
+  padding: 15px;
 }
 
 .featured{
@@ -116,10 +122,13 @@ header{
   color: white;
 }
 
-.featured >div{
-  margin: 80px 10px;
-  padding: 20px;
-  line-height: 90px;
+.featured #headerfeat{
+  text-align: center;
+}
+
+.featured #pic-container{
+  padding: 50px;
+  margin: 50px;
 }
 
 .circle{
